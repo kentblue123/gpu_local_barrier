@@ -1,6 +1,8 @@
 # gpu_local_barrier
 Explore performance gain of gpu local barrier for wavefront parallelism applications
 
+To compile, nvcc sat_rk.cu -o sat_rk
+
 About the code, summed area table or integral image
 
 https://computersciencesource.wordpress.com/2010/09/03/computer-vision-the-integral-image/
