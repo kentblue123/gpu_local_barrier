@@ -100,6 +100,9 @@ __global__ void sat(int *a, int*b, int* flag,int rowsTotal,int colsTotal)
         __syncthreads();
     } 
     atomicExch(flag+blockIdx.y*colsTotal/blockDim.x+blockIdx.x,1);
+    // for older version then cuda 3.0, comment out the above line and chnage it to the following.
+    // flag[blockIdx.y*colsTotal/blockDim.x+blockIdx.x]=1;
+    
 }
 
 void cpu_sat(int* a, int* b, int M, int N){
@@ -130,7 +133,7 @@ int main()
     //M is number of rows
     //N is number of columns
     //M,N have to be multiples of BLOCK_DIM_X and BLOCK_DIM_Y
-    int M=256,N=256;
+    int M=64,N=64;
     int total_e=M*N;
     int widthstep=total_e*sizeof(int);
 

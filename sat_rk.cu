@@ -117,7 +117,7 @@ int main()
     //M is number of rows
     //N is number of columns
     //M,N have to be multiples of BLOCK_DIM_X and BLOCK_DIM_Y
-    int M=256,N=256;
+    int M=64,N=64;
     int total_e=M*N;
     int widthstep=total_e*sizeof(int);
 
