@@ -7,7 +7,7 @@ https://computersciencesource.wordpress.com/2010/09/03/computer-vision-the-integ
 
 Where to download gpgpu-sim
 
-https://drive.google.com/drive/my-drive
+https://github.com/gpgpu-sim/gpgpu-sim_distribution
 
 For installing gpgpu-sim
 
